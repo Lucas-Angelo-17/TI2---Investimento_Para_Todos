@@ -1,0 +1,150 @@
+form fieldset {
+    margin: 10px auto 10px auto;
+    width: 60%;
+    border: solid black 1px;
+    padding: 3%;
+ }
+ 
+ form legend {
+    padding: 10px;
+    margin: 15px;
+    border: solid black 1px;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #e8e8e8;
+ }
+ 
+ form label {
+    display: block;
+    font-size: 17px;
+    margin-top: 2%;
+ }
+ 
+ form input {
+    width: 100%;
+    border: solid #ccc 1px;
+    font-size: 17px;
+    margin-bottom: 15px;
+ }
+ 
+ form input.botao {
+    display: block;
+    width: auto;
+    float: left;
+ }
+
+ .boxx{
+    background-color: #021bff;
+    vertical-align: top;
+    margin: 8px;
+    padding: 11px;
+    border: 7px #5e5e5e;
+    border-radius: 16px;
+    box-sizing: border-box;
+ }
+
+ .boxx p{
+    text-align: justify;
+ }
+
+
+
+/* a partir daqui = style mas sem alteracoes no card, para nao desformatar o card */
+
+ .main{font-family: Arial, Helvetica, sans-serif;}
+
+.header{
+    background-color:rgb(2, 27, 255);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.logo_area{margin-top: 20px;}
+.nome{
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.menu{margin-top: 10px;
+margin-bottom: 20px;}
+.menu nav a{
+    background-color:rgb(0, 119, 255);
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+.menu nav a:hover{background-color: rgb(252, 252, 252);
+color: black;}
+
+
+.horizontal{text-align: center;}
+
+.card-header{font-size: large;}
+
+
+.grid{display: grid;}
+
+
+.conteudo{
+    font-size: x-large;
+}
+
+.titulo{margin-top: 25px;
+margin-bottom: 25px;
+font-weight: bold;}
+
+.fotoconteudo{max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;}
+
+.video{max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+.negrito{font-weight: bold;}
+
+.conteudo p{margin-top: 30px;}
+
+.imagemmodal{
+    max-width: 465px;
+
+}
+
+footer{
+    background-color: rgb(2, 27, 255);
+    margin-top: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px){
+.carousel{
+    margin-left: 80px;
+}
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p{
+    text-align: justify;
+}
+
+.item{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.outrocontainer{
+    display: flex;
+  align-items: stretch;
+}

@@ -1,0 +1,186 @@
+.main{font-family: Arial, Helvetica, sans-serif;}
+
+.header{
+    background-color:rgb(2, 27, 255);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.logo_area{margin-top: 20px;}
+.nome{
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.menu{margin-top: 10px;
+margin-bottom: 20px;}
+.menu nav a{
+    background-color:rgb(0, 119, 255);
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+.menu nav a:hover{background-color: rgb(252, 252, 252);
+color: black;}
+
+
+.horizontal{text-align: center;}
+
+.card-header{font-size: large;}
+
+
+.grid{display: grid;}
+
+
+.conteudo{
+    font-size: x-large;
+}
+
+.titulo{margin-top: 25px;
+margin-bottom: 25px;
+font-weight: bold;}
+
+.fotoconteudo{max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;}
+
+.video{max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+.negrito{font-weight: bold;}
+
+.conteudo p{margin-top: 30px;}
+
+
+/*.main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}*/
+
+
+
+
+.imagemmodal{
+    max-width: 465px;
+
+}
+
+footer{
+    background-color: rgb(2, 27, 255);
+    margin-top: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px){
+.carousel{
+    margin-left: 80px;
+}
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p{
+    text-align: justify;
+}
+
+.card{
+    width: 100%;
+    margin: auto;
+    border-radius: 6px;
+}
+
+.item{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.outrocontainer{
+    display: flex;
+  align-items: stretch;
+}
+
+.w3_twitter{
+    background:#1da1f2;
+}
+.w3_facebook{
+    background:#3b5998;
+}
+.w3_dribbble{
+    background:#ea4c89;
+}
+.w3_g_plus{
+    background:#dd4b39;
+}
+.w3_twitter:hover{
+    background:#54BAF2;
+}
+.w3_facebook:hover{
+    background:#6187D5;
+}
+.w3_github{
+  background:#121316;
+}
+.w3_github:hover{
+  background:#121316;
+}
+.w3_dribbble:hover{
+    background:#EC6D9E;
+}
+.w3_g_plus:hover{
+    background:#EA6A5B;
+}
+
+.social ul li a{
+    color:#ffffff;
+}
+.social ul li:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+    margin-left: 10px;
+    color: #212121;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    text-align: center;
+    background: #fff;
+}

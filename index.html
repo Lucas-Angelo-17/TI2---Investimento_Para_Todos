@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Bullish Key</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="sortcut icon" href="/IMG/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="row">
+
+            <div class="col-12 header_area">
+                <div class="row logo_area">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 nome">
+                        <h1 id="h_id_user">Bullish Key</h1>
+                    </div>
+                </div>
+
+                <div class="col-12 menu">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="InvestType.html">Tipos de Investimentos</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="Simulations.html">Simulações</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="Contacts.html">Contatos</a>
+                        <button class="flex-sm-fill text-sm-center nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" id="login">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                </div>
+
+                                <div class="container">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario" autocomplete="off">
+
+                                    <label for="senha" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="senha" autocomplete="off">
+
+                                    <button type="submit" onclick="login()">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <a href=".\CreateAccount.html">Create New Account</a>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main">
+
+        <div class="categoria">
+            <h2>Tipos de Investimentos</h2>
+        </div>
+
+        <div class="container row">
+
+            <div class="item">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../IMG/mercado-de-acoes1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">AÇÃO</h5>
+                            <p class="card-text">Ação é a menor parcela do capital social das companhias ou sociedades anônimas. Ao comprar ações, o investidor se torna sócio da empresa e, portanto, pode ganhar com o crescimento e a distribuição de seus lucros. Por outro
+                                lado, passa a correr os riscos do negócio</p>
+                            <a href="Stocks.html" class="btn btn-primary">Ação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../IMG/criptomoedas1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CRIPTOMOEDAS</h5>
+                            <p class="card-text">Uma criptomoeda ou cibermoeda é uma sequência de números encriptografados que possibilita transações comerciais rápidas, de forma barata e mais discreta, sem fiscalização de autoridades governamentais</p>
+                            <a href="Crypto.html" class="btn btn-primary">Criptomoedas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../IMG/fundos-imobiliarios1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">FUNDOS IMOBILIÁRIOS</h5>
+                            <p class="card-text">Um fundo imobiliário é uma espécie de “condomínio” de investidores, que reúnem seus recursos para que sejam aplicados em conjunto no mercado imobiliário.</p>
+                            <a href="Funds.html" class="btn btn-primary">Fundos Imobiliarios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Duvidas:</h2>
+
+        <div class="grid cardcor">
+            <div class="col-12">
+                <div class="card text-white bg-primary mb-3 cartaocor" style="max-width: 48rem;">
+                    <div class="card-header">Como Funciona?</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tesouro Direto</h5>
+                        <p class="card-text">É um programa criado em 2002 pelo Tesouro Nacional – órgão responsável pela gestão da dívida pública – para permitir que pessoas físicas comprem papéis do governo federal pela internet. Em outras palavras, pode-se dizer que ao
+                            comprar um título do Tesouro Direto o investidor está emprestando dinheiro ao governo.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="grid">
+                <div class="col-12">
+                    <div class="card text-white bg-danger mb-3" style="max-width: 48rem;">
+                        <div class="card-header">O que e?</div>
+                        <div class="card-body">
+                            <h5 class="card-title">NFT</h5>
+                            <p class="card-text">NFT é uma sigla para non-fungible token – ou token não-fungível. De forma simplificada, o NFT é um código de computador que serve como autenticação de um arquivo – a garantia de que ele é único. Esse é o significado de não-fungível,
+                                aliás. Na economia, ativos fungíveis são aqueles cujas unidades possa, ser trocadas sem alterar o valor. Por exemplo: você pode trocar uma nota de R$ 50 por cinco notas de R$ 10 reais e elas continuarão valendo a mesma
+                                coisa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="grid">
+                    <div class="col-12">
+                        <div class="card text-white bg-success mb-3" style="max-width: 48rem;">
+                            <div class="card-header">Como Funciona?</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Poupança</h5>
+                                <p class="card-text">A poupança é uma aplicação de renda fixa simples e acessível para todo mundo. Até menores de idade também podem ter uma conta em seu nome, desde que sejam representados ou assistidos pelo pai, mãe ou responsável legal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+
+
+            </div>
+    </main>
+    <footer class="footer">
+        FINANCE - Todos os direitos reservados - 2021
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
+</body>
+
+
+</html>

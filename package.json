@@ -1,0 +1,26 @@
+{
+    "name": "bullish-code",
+    "version": "1.0.0",
+    "description": "Este é um repositório _template_ que tem como principal objetivo\r fornecer uma estrutura inicial para projetos da disciplina _Trabalho\r Interdisciplina - Aplicações Web_ da PUC Minas.",
+    "main": "app.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20211-grupo-11-financas-familiares.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20211-grupo-11-financas-familiares/issues"
+    },
+    "homepage": "https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20211-grupo-11-financas-familiares#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

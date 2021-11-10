@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullish Key</title>
+    <link rel="stylesheet" href="styles/simul.css">
+    <link rel="sortcut icon" href="/IMG/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header class="header">
+        <div class="row">
+
+            <div class="col-12 header_area">
+                <div class="row logo_area">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 nome">
+                        <h1>Bullish Key</h1>
+                    </div>
+                </div>
+
+                <div class="col-12 menu">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="InvestType.html">Tipos de Investimentos</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="Simulations.html">Simulações</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="Contacts.html">Contatos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form name="calcform" method="post" action="">
+        <fieldset>
+           <legend>Simulações financeiras</legend>
+     
+           <label for="valor1">Digite o valor a ser investido :</label>
+           <input type="text" name="valor1" id="valor1" />
+
+           <label for="valor2">Digite o tempo em meses :</label>
+           <input type="text" name="valor2" id="valor2" />
+
+           <label for="oper">Selecione a operação:</label>
+           <select name="oper" id="oper">
+                <option value="poupanca">Poupança</option>
+                <option value="cdb">CDB</option>
+                <option value="tesouro">Tesouro Direto</option>
+                <option value="lci">LCI e LCA</option>
+           </select>
+     
+           <label for="res">Resultado:</label>
+           <input type="text" name="res" id="res" />
+     
+           <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+        </fieldset>
+     </form>
+     <div class="card-deck boxx">
+        <div class="card">
+          <img class="card-img-top" src="/IMG/cdb.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">CDB</h5>
+            <p class="card-text">CDB e LC são investimentos em Renda Fixa com boas rentabilidades e muitas opções de prazo de resgate para sua estratégia de investimento.
+                Investimento versátil para cada perfil
+                São cobertos pelo Fundo Garantidor de Créditos - FGC.</p>
+            <p class="card-text"><small class="text-muted">Ultimo update 06/07/2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/IMG/selic.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tesouro Direto</h5>
+            <p class="card-text">Porta de entrada do mundo dos investimentos. Possui modalidades prefixadas e pós-fixadas. Ideal para quem quer começar.
+                Investimento mais seguro do mercado
+                Rende mais do que a poupança.</p>
+            <p class="card-text"><small class="text-muted">Ultimo update 06/07/2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/img/lci.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">LCI e LCA</h5>
+            <p class="card-text">LCI e LCA são investimentos muito populares na Renda Fixa, com boas rentabilidades no médio prazo.
+                Bom para quem está se planejando para o futuro
+                São isentos de Imposto de Renda.</p>
+            <p class="card-text"><small class="text-muted">Ultimo update 06/07/2021</small></p>
+          </div>
+        </div>
+      </div>
+
+     <footer class="footer">
+        FINANCE - Todos os direitos reservados - 2021
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/simul.js"></script>
+    </body>
+</html>

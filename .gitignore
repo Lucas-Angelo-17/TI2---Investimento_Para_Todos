@@ -1,0 +1,7 @@
+# IDEs
+*.swp
+*.swo
+# .env
+/node_modules
+package-lock.json
+.vscode
