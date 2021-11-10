@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullish Key</title>
-    <link rel="stylesheet" href="styles/simul.css">
+    <title>IEF</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
     <link rel="sortcut icon" href="/IMG/favicon.ico" type="image/x-icon" />
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <div class="row logo_area">
 
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 nome">
-                        <h1>Bullish Key</h1>
+                      <h1 id="h_id_user">IEF<i class="fas fa-chart-line"></i></h1>
                     </div>
                 </div>
 
@@ -33,16 +34,18 @@
         </div>
     </header>
     <form name="calcform" method="post" action="">
-        <fieldset>
-           <legend>Simulações financeiras</legend>
-     
-           <label for="valor1">Digite o valor a ser investido :</label>
+      <div class="card" style="width: 75rem;">
+        <div class="card-body">
+         
+          <h5 class="card-title">Simulações financeiras</h5>
+          <label for="valor1">Digite o valor a ser investido :</label>
            <input type="text" name="valor1" id="valor1" />
 
            <label for="valor2">Digite o tempo em meses :</label>
            <input type="text" name="valor2" id="valor2" />
 
            <label for="oper">Selecione a operação:</label>
+           
            <select name="oper" id="oper">
                 <option value="poupanca">Poupança</option>
                 <option value="cdb">CDB</option>
@@ -52,13 +55,15 @@
      
            <label for="res">Resultado:</label>
            <input type="text" name="res" id="res" />
-     
-           <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
-        </fieldset>
+          <a href="#" class="btn btn-primary" value="Calcular"  onClick="calcular(document.calcform.oper.value)">Calcular</a>
+        </div>
+      </div>
+      </div>
+        
      </form>
      <div class="card-deck boxx">
         <div class="card">
-          <img class="card-img-top" src="/IMG/cdb.jpg" alt="Card image cap">
+          <img class="card-img-top" src="cdb.jpg" alt="Card image cap" width="300" height="477">
           <div class="card-body">
             <h5 class="card-title">CDB</h5>
             <p class="card-text">CDB e LC são investimentos em Renda Fixa com boas rentabilidades e muitas opções de prazo de resgate para sua estratégia de investimento.
@@ -68,7 +73,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="/IMG/selic.png" alt="Card image cap">
+          <img class="card-img-top" src="selic.png" alt="Card image cap" width="300" height="500">
           <div class="card-body">
             <h5 class="card-title">Tesouro Direto</h5>
             <p class="card-text">Porta de entrada do mundo dos investimentos. Possui modalidades prefixadas e pós-fixadas. Ideal para quem quer começar.
@@ -78,7 +83,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="/img/lci.png" alt="Card image cap">
+          <img class="card-img-top" src="lci.png" alt="Card image cap" width="300" height="500">
           <div class="card-body">
             <h5 class="card-title">LCI e LCA</h5>
             <p class="card-text">LCI e LCA são investimentos muito populares na Renda Fixa, com boas rentabilidades no médio prazo.
@@ -96,5 +101,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts/simul.js"></script>
+    <script src="https://kit.fontawesome.com/08ffd45a42.js" crossorigin="anonymous"></script>
     </body>
 </html>

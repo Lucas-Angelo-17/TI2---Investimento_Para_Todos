@@ -1,25 +1,95 @@
+form fieldset {
+    margin: 10px auto 10px auto;
+    width: 60%;
+    border:  black 1px;
+    background-color:rgb(75, 75, 75);
+    padding: 3%;
+ }
+ 
+ 
+ form legend {
+    padding: 10px;
+    margin: 15px;
+    border: solid black 1px;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #e8e8e8;
+ }
+ 
+ form label {
+    display: block;
+    font-size: 17px;
+    margin-top: 2%;
+ }
+ 
+ form input {
+    width: 100%;
+    border: solid #ccc 1px;
+    font-size: 17px;
+    margin-bottom: 15px;
+ }
+ 
+ form input.botao {
+    display: block;
+    width: auto;
+    float: left;
+ }
+
+ .boxx{
+    background-color: #484849;
+    vertical-align: top;
+    margin: 8px;
+    padding: 11px;
+    border: 7px #5e5e5e;
+    border-radius: 16px;
+    box-sizing: border-box;
+ }
+
+ .boxx p{
+    text-align: justify;
+ }
+
+
 .main{font-family: Arial, Helvetica, sans-serif;}
 
 .header{
-    background-color:rgb(2, 27, 255);
+    background-color:rgb(8, 8, 8);
     margin-bottom: 10px;
     text-align: center;
 }
+
+
 .logo_area{margin-top: 20px;}
 .nome{
-    color: rgb(255, 255, 255);
+    color: rgb(190, 190, 190);
     margin-top: 30px;
     font-family: 'Times New Roman', Times, serif ;
 }
+body{
+    background-color: rgb(255, 255, 255);
+}
 
 .menu{margin-top: 10px;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+background-color:rgb(8, 8, 8) ;}
 .menu nav a{
-    background-color:rgb(0, 119, 255);
-    color: rgb(255, 255, 255);
+    background-color:rgb(8, 8, 8);
+     color: rgb(190, 190, 190);
     margin-left: 5px;
 }
-.menu nav a:hover{background-color: rgb(252, 252, 252);
+.card-header{
+    color:white;
+    background-color: rgb(70, 68, 68);
+}
+.card-body{
+    
+     color: rgb(190, 190, 190);
+    background-color:rgb(8, 8, 8)
+}
+.btn-primary{
+    background-color: rgb(0, 0, 0);
+}
+.menu nav a:hover{background-color: rgb(75, 75, 75);
 color: black;}
 
 
@@ -72,9 +142,9 @@ font-weight: bold;}
 }
 
 footer{
-    background-color: rgb(2, 27, 255);
+    background-color: rgb(8, 8, 8);
     margin-top: 10px;
-    color: white;
+    color: rgb(75, 75, 75);
     padding: 20px;
     text-align: center;
 }
@@ -182,5 +252,5 @@ p{
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     text-align: center;
-    background: #fff;
+    background: rgb(75, 75, 75);
 }
